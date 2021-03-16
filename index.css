@@ -1,0 +1,141 @@
+/*
+
+PART 1:
+
+You've been ordered to improve your company's newsletter form. 
+You can design it however you want, but the manager wants the button to
+animate both on the :hover and the :active state.
+
+1. Redesign the page (e.g. colors, positions, sizing, spacing)
+2. Improve the button's hover effect
+3. Improve thee button's click effect
+
+SKILLS:
+color, background, margin, padding, border-radius, 
+CSS pseudo selectors (:active, :hover), 
+
+*/
+
+
+body {
+    margin: 0;
+	font-family: "Helvetica", sans-serif;
+}
+
+form {}
+
+h2 {
+    color: #FF7F51;
+	margin: 0;
+	padding: 0;
+}
+
+input {
+    width: 150px;
+	border: 2px, solid, #4F000B;
+	height: 18px;
+	margin: 15px 5px;
+}	
+
+button{
+	display: block;
+	border-radius: 2px;
+	width: 125px;
+	height: 25px;
+	font-family: Helvetica, sans-serif;
+	margin: auto;
+	background-color: #FF9B54;
+    color: #4F000B;
+    border: 1px solid #4F000B;
+    font-size: 15px;
+	
+}
+	/*
+	margin: ;
+	padding: ;
+	border: ;
+
+    margin-top: 20px;
+    margin-bottom: 0;
+button {
+    display: block;
+    border-radius: 2px;
+    background: #3d492b;
+}
+	background-color: rgba(255, 127, 81, 0.8);
+	
+	rgba(0, 36, 144, 0.70)
+
+	background-color: #39004d;
+    color: #FF9B54;
+
+
+*/
+button:hover {
+   	background-color: #4F000B;
+    color: #FF9B54;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: 1px solid #FF9B54;
+}
+
+button:active {
+	background-color: #4F000B;
+    color: #FF9B54;
+	border: 1px solid #FF9B54;
+	transform: translateY(4px);
+}
+
+.container{
+	height: 125px;
+    width: 150px;
+	margin: 50px 275px 40px;
+	padding: 20px 20px;
+	text-align: center;
+	display: flex;
+	background: rgba(114, 0, 38, 0.90);
+	border-color: black;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	border-radius: 10px;
+}
+
+.item{
+}
+
+#itemOne{
+}
+
+#email{
+
+}
+
+#btn{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}
+
+#label{
+    color: #FF7F51;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+	font-size: 14pt;
+}
+
+#myForm {
+    text-align: center;
+}
+
+
+.error{
+    background-color: red;
+    color: #000;
+    font-size: 60px;
+    text-align: center;
+    display: none;
+}
+.error:hover{
+    cursor: pointer;
+}
