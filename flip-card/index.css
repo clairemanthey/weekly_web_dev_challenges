@@ -1,0 +1,331 @@
+html, body {
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	background-image: url("background.jpg");
+	background-position: top;
+/*	background-size: cover;
+	background-repeat: no-repeat;*/
+}
+
+/*
+DESCRIPTION:
+
+You challenge is to create a responsive flip card. 
+The user should be able to hover or click on the card 
+and it needs to flip on the other side to reveal what's on the back. 
+
+Remember: the card needs to be responsive - as I change the size of my window, 
+the card needs to adjust to the new size and look natural. 
+
+transform-style, transform, transition, 
+perspective, pseudo-classes, cursor, 
+min- max- prefixes, ems and rems, 
+*/
+
+/* Write your code here 👇 */
+
+
+/*
+
+DETAILED INSTRUCTIONS
+1. Choose the required pseudo-class
+2. Figure out how to flip a card on the required event
+3. Make it responsive!
+
+*/
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.container-rowtwo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.cards{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.cards-rowtwo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+.flip-card{
+	background-color: transparent;
+	width: 250px;
+	height: 166px;
+	perspective: 1000px;
+	margin: 10px;
+
+}
+.flip-card-rowtwo{
+	background-color: transparent;
+	width: 192px;
+	height: 250px;
+	margin: 10px;
+	text-align: center;
+}
+
+.flip-cardc{
+	background-color: transparent;
+	max-width: 100%;
+	height: auto;
+}
+
+.flip-cardc-rowtwo{
+	background-color: transparent;
+	min-width: 100%;
+	height: 100%;
+	perspective: 1000px;
+
+}
+.flip-card-inner{
+	position: relative;
+	max-width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s ease-out;
+	transform-style: preserve-3d
+
+}
+
+.flip-card:hover .flip-card-inner{
+	transform: rotateY(180deg);
+}
+
+.flip-card-rowtwo:hover .flip-card-inner{
+	transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+/*front side styling*/
+.flip-card-front{
+	background-color: #bbb;
+	color: black;
+	z-index: 2;
+}
+
+/*back side styling*/
+.flip-card-back-one{
+	background-color: rgba(0, 121, 103, .6);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.flip-card-back-two{
+	background-color: rgba(203, 65, 44, .5);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.flip-card-back-three{
+	background-color: rgba(56, 77, 84, .6);
+	color: white;
+	transform: rotateY(180deg);
+	
+}
+
+.flip-card-back-four{
+	background-color: rgba(121, 67, 47, .6);
+	color: white;
+	transform: rotateY(180deg);
+
+}
+
+.flip-card-back-five{
+	background-color: rgba(224, 57, 152, .5);
+	color: white;
+	transform: rotateY(180deg);
+
+}
+
+.flip-card-back-six{
+	background-color: rgba(238, 29, 35, .5);
+	color: white;
+	transform: rotateY(180deg);
+
+}
+
+/*button styling*/
+button{
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+}
+
+
+.button-caterpillar{
+	background-color: #e6f2f0;
+	color: #007967;
+}
+
+.button-caterpillar:hover{
+	background-color: #007967;
+	color: #e6f2f0;
+	border: 2px solid #70161c; 
+}
+
+.button-caterpillar:active{
+	transform: translateY(4px);
+}
+
+.button-spider{
+	background-color: #faecea;
+	color: #CB412C ;
+}
+
+.button-spider:hover{
+	background-color: #CB412C;
+	color: #faecea;
+	border: 2px solid #2c3c39;
+}
+
+.button-spider:active{
+	transform: translateY(4px);
+}
+
+.button-cricket{
+	background-color: #ebedee;
+	color: #384d54;
+}
+
+.button-cricket:hover{
+	background-color: #384d54;
+	color: #ebedee;
+	border: 2px solid #1f060e;
+}
+
+.button-cricket:active{
+	transform: translateY(4px);
+}
+
+.button-babybear{
+	background-color: #f2ecea;
+	color: #79432f;
+}
+
+.button-babybear:hover{
+	background-color: #79432f;
+	color: #f2ecea;
+	border: 2px solid #242e2d;
+}
+
+.button-babybear:active{
+	transform: translateY(4px);
+}
+
+.button-chickboom{
+	background-color: #fcebf5;
+	color: #e03998;
+}
+
+.button-chickboom:hover{
+	background-color: #e03998;
+	color: #fcebf5;
+	border: 2px solid #563761;
+}
+
+.button-chickboom:active{
+	transform: translateY(4px);
+}
+
+.button-chicakonetwothree{
+	background-color: #fde8e9;
+	color: #ee1d23;
+}
+
+.button-chicakonetwothree:hover{
+	background-color: #ee1d23;
+	color: #fde8e9;
+	border: 2px solid #273a5b;
+}
+
+.button-chicakonetwothree:active{
+	transform: translateY(4px);
+}
+
+@media only screen and (max-width: 992px){
+		.container{
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		padding: 0;
+		flex-wrap: wrap
+	}
+	.container-rowtwo{
+		display: flex;
+	    flex-direction: row;
+		margin: auto;
+		padding: 0;
+		flex-wrap: wrap;
+	}
+	.cards{
+		display: flex;
+	    flex-direction: row;
+		margin: auto;
+		padding: 0;
+		flex-wrap: wrap;
+		}
+	.cards-rowtwo{
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		padding: 0;
+		flex-wrap: wrap;
+	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	.container{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		padding: 0;
+	}
+	.container-rowtwo{
+		display: flex;
+	    flex-direction: column;
+		margin: auto;
+		padding: 0;
+	}
+	.cards{
+		display: flex;
+	    flex-direction: column;
+		margin: auto;
+		padding: 0;
+		}
+	.cards-rowtwo{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		padding: 0;
+	}
+	
+	html, body {
+		margin: 0;
+        padding: 0;
+	    background: url("background-sm.jpg") repeat-x;
+		background-position: top;
+		/*display: inline-table;
+		background-size: cover;
+		 	    background-repeat: no-repeat;
+*/
+    }
+
+}
+
+/*background-sm Photo by cottonbro from Pexels*/
