@@ -1,0 +1,83 @@
+body {
+    background-color: #F1F2F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 300px;
+    height: 50px;
+    background-color: #FF8600;
+    border-radius: 100px;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+	margin: 10px auto;
+}
+
+
+#text {
+    margin-top: 20px;
+    color: #F1F2F6;
+    font-family: 'Nunito', sans-serif;
+    font-size: 65px;
+    align-self: center;
+    line-height: 0;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #00008b;
+
+}
+
+.button-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+/*height: 10px;
+    width: 20px
+	    width: 300px;
+    margin-left: 210px;
+*/
+#button-one {
+    background-color: black;
+    border-radius: 5px;
+	color: orange;
+	height: 30px;
+	width: 65px;
+	font: bold 20px Helvetica;
+	margin: auto 5px;
+}
+
+
+#button-two {
+    background-color: red;
+    border-radius: 5px;
+	height: 30px;
+	width: 65px;
+	font: bold 20px Helvetica;
+	margin: auto 5px;
+}
+
+#button-three {
+    background-color: white;
+    border-radius: 5px;
+	height: 30px;
+	width: 65px;
+	font: bold 20px Helvetica;
+   	margin: auto 5px;
+}
+
+#button-reset{
+	margin-top: 10px;
+	color: white;
+	background-color: yellow;
+	border-radius: 10px;
+	height: 50px;
+	width: 125px;
+	font: bold 36px Helvetica;
+	border-color: black;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #00008b;
+
+}
