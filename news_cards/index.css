@@ -1,0 +1,189 @@
+/*
+DESCRIPTION:
+Your job is to style the the individual items so that they look like content cards,
+just like what we have in the slides. Each item has a title and a description.
+
+You should use CSS grid for the layout:
+
+- On mobile phones, one column per row
+- On tablet, two columns per row
+- On desktop, three columns per row
+
+Use media queries to make the page responsive.
+For the page width:
+
+- From 0 to 480px should be for mobile
+- Between 480px and 1025px should be for tablets
+- Above 1025px should be for desktop
+
+look completely different. Just follow the layout!
+Feel free to choose your own colors and you can even go ahead to make your cards
+
+
+*/
+
+html{
+	background: #301934;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+}
+
+h1{
+	font: bold 54px Verdana, sans-serif;
+	-webkit-text-stroke: 1px black;
+	color: #C5A5E4;
+}
+
+.heading{
+	text-align: center;
+}
+
+.row{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+}
+.column{
+	margin: 20px 15px;
+	padding: 0 0 0 10px;
+	border-radius: 20px;
+}
+
+.item{
+}
+
+#column_one{
+	background-color: #FC70C2;
+	color: #390122;
+	box-shadow: 5px 10px #7E3AC2;
+}
+
+#column_two{
+	background-color: #FC54B6;
+	color: #390122;
+	box-shadow: 5px 10px #8C4ECA;
+}
+
+#column_three{
+	background-color: #FB37A9;
+	color: #390122;
+	box-shadow: 5px 10px #9A64D1;
+}
+
+#column_four{
+	background-color: #FA1B9D;
+	color: #390122;
+	box-shadow: 5px 10px #A879D7;
+}
+
+#column_five{
+	background-color: #F30590;
+	color: #390122;
+	box-shadow: 5px 10px #B68FDE;
+}
+
+.title{
+	font: bold 24px Helvetica, sans-serif;
+}
+
+.description{
+	font: bold 18px Helvetica, sans-serif;
+}
+
+/*two columns per row*/
+@media only screen and (min-width: 480px){
+	.row{
+		flex-direction: row; 
+		flex-wrap: wrap;
+	}
+	.column{
+		flex: 35%;
+		max-width: 35%;
+		box-shadow: 20px 20px rgba(39, 0, 66, .8);
+	}
+	html{
+		background-color: #ADE8F4;
+	}
+	h1{
+		color: #105B6A;
+	}
+	
+	#column_one{
+		background-color: #02044F;
+		color: #D7D9FE;
+	}
+	
+	#column_two{
+		background-color: #00333D;
+		color: #D6F8FF;
+	}
+	
+	#column_three{
+		background-color: #002E3D;
+		color: #D6F5FF;
+	}
+	
+	#column_four{
+		background-color: #012450;
+		color: #D7E9FF;
+	}
+	
+	#column_five{
+		background-color: #003552;
+		color: #D6F1FF;
+	}
+}
+
+/*three columns per row*/
+@media only screen and (min-width: 1025px){
+	.row{
+		flex-direction: row;
+	}
+	.column{
+		flex: 25%;
+		max-width: 25%;
+		box-shadow: 20px 20px #270042;
+	}
+	
+	html{
+		background-color: #FDC500;
+	}
+	h1{
+		color: #3D0066;
+	}
+	.column{
+	    background-color: #3D0066;
+	    color: #FDC500;		
+	}
+	#column_one{
+	    background-color: #3D0066;
+	    color: #FDC500;		
+	}
+	
+	#column_two{
+	    background-color: #3D0066;
+	    color: #FDC500;		
+	}
+	
+	#column_three{
+	    background-color: #3D0066;
+	    color: #FDC500;		
+	}
+	
+	#column_four{
+	    background-color: #3D0066; 
+	    color: #FDC500;		
+	}
+	
+	#column_five{
+	    background-color: #3D0066;
+	    color: #FDC500;		
+	}
+}
