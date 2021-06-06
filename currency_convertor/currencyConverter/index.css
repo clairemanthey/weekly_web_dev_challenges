@@ -1,0 +1,218 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	text-align: center;
+    font-family: sans-serif;
+    background-color: #F7F7FF;
+   /* display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;*/
+}
+
+h1{
+    color: #005994;
+    font-size: 3rem;
+    
+}
+/*.convert,*/
+.exchange{
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #3B4754;
+    padding-right: 20px;
+}
+
+input {
+	width: 100px;
+	height: 40px;
+	font-size: 1.5em;
+    outline: 0;
+	border-radius: 5px;
+	border: 2px solid #3B4754;
+	background-color: #F7F7FF;
+}
+
+
+button {
+	width: 300px;
+	height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #00539CFF;
+    font-family: Helvetica;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid #005994;
+	background-color: #F7F7FF;
+}
+
+#exchangeBtn:hover{
+	background-color: #00539CFF;
+	color: #F7F7FF;
+}
+
+#exchange:hover{
+	background-color: #FF5147;
+	color: #F7F7FF;
+	border-color: #F7F7FF;
+	
+}
+/*
+select{
+	width: 80px;
+	height: 35px;
+	font-size: 20px;
+	text-align: center;
+	padding-left: 10px;
+   outline: 0;
+}
+*/
+#exchange{
+	width: 90px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 0 20px;
+    outline: 0;
+    color: #FF5147;
+    border: 2px solid #FF5147;
+
+}
+
+#exchange:active, button:active {
+	transform: scale(0.9);
+}
+
+#outputTxt{
+    display: none;
+    padding: 20px;
+    font-size: 30px; 
+    color: #005994;
+}
+
+span{
+    color: #FE5F55;
+    font-size: 35px;
+}
+
+#exchangeRate{
+    cursor:default;
+}
+
+footer{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+a{
+    color: #ffffff;
+    bottom: 0;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.containerTwo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
+
+
+.item{
+	padding: 10px;
+	margin: 5px;
+}
+
+#fromCurrency{
+	width: px;
+    height: 40px;
+    border: px solid #;
+    font-size: 1.5em;
+    color: #3B4754;
+    background-color: #F7F7FF;
+	border: 2px solid #3B4754; 
+    border-radius: 5px;
+    box-shadow: ;
+}
+
+#toCurrency{
+	width: px;
+    height: 40px;
+    border: px solid #;
+    font-size: 1.5em;
+    color: #3B4754;
+    background-color: #F7F7FF;
+	border: 2px solid #3B4754; 
+    border-radius: 5px;
+    box-shadow: ;
+	
+}
+
+#convert{
+	font-size: 1.5em;
+	color: #3B4754;
+	
+}
+
+#select{
+	padding-bottom: 
+}
+/*
+.currencies{
+    font-family: Helvetica;
+    font-size: 25px;
+}*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modalContent {
+	margin: auto;
+    padding: 20px;
+    width: 250px;
+    font: 1.6em bold, sans-serif;
+    border-radius: 15px;
+    background-color: #FFF9F9;
+    color: #FF5147;
+    border: 1px solid #FF5147; 
+}
+
+/* The Close Button */
+#close {
+  color: #FF5147;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

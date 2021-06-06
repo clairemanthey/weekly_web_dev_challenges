@@ -1,0 +1,68 @@
+<DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+	<title>Change Currency</title>
+  </head>
+  <body>
+
+    <h1>Change My Currency</h1>
+	<h2>Currency Rates for</h2>
+	<h2 id="displayDate"></h2>
+	<div class="container">
+      <p id="convert" class="item">Convert : </p>
+        
+	  <input id="ogCurrency" class="item" placeholder="0" value="1"> </input>
+     
+      <div class="item" id="select">
+        <select id="fromCurrency">
+		  <option value="AUD">AUD</option>
+		  <option value="CAD">CAD</option>
+          <option value="EUR">EUR</option>
+		  <option value="GBP">GBP</option>
+		  <option value="JPY">JPY</option>
+		  <option value="NZD">NZD</option>
+		  <option value="USD" selected>USD</option>
+		</select>
+		
+   		<button id="exchange">switch</button>
+        
+		<select id="toCurrency">
+		  <option value="AUD">AUD</option>
+		  <option value="CAD">CAD</option>
+		  <option value="EUR">EUR</option>
+		  <option value="GBP">GBP</option>
+		  <option value="JPY">JPY</option>
+		  <option value="NZD" selected>NZD</option>
+		  <option value="USD">USD</option>
+        </select>
+      </div>
+	</div>
+
+    <button id="exchangeBtn">Exchange my money</button>
+    <div class="containerTwo">	
+      <p class="exchange">Current Exchange Rate: </p>
+	  <input type="text" id="exchangeRate" ></input> 
+    </div>
+	
+	<div id="myModal" class="modal">
+	  <div class="modalContent">
+	    <span id="close">&times;</span>
+		<p>Please choose two different currencies
+	  </div>
+	</div>
+	
+	<p id="outputTxt">
+        <span id="currencyFrom"></span> is worth <span id="currencyTo"></span>
+    </p>
+
+    <script src="index.js"></script>
+
+    </body>
+
+</html>
+
+</html>
