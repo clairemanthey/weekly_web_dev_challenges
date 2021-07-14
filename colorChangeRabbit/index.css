@@ -1,0 +1,279 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: #56DC5F;
+	font-family: Helvetica;
+}
+
+.bunContainer{
+	display: flex;
+    height: calc(100% - 80px);
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px 0 0 0;
+}
+
+
+#right-ear{
+	content: "";
+	margin: 0 0 0 15px; 
+	background: #AF7F54;
+	width: 100px;
+	height: 50px;
+	border-radius: 9% 100%;
+	position: absolute;
+	display: inline-block;
+	box-shadow: inset 16px 15px 10px 6px rgba(0, 0, 0, 0.22);
+	z-index: -1;
+	top: -55px;
+}
+
+#left-ear{
+	content: "";
+	background: #AF7F54;
+	width: 100px;
+	height: 50px;
+	border-radius: 9% 100%;
+	position: relative;
+	display: inline-block;
+ 	box-shadow: inset 16px 15px 10px 6px rgba(0, 0, 0, 0.22);
+	z-index:-1;
+	top: -55px;
+}
+
+
+.head::after, .head::before{
+	width: 40px;
+	height: 25px;
+	border-radius: 50%;
+	box-shadow: 0 -5px 0 0 #87613f;
+	position: absolute;
+}
+
+
+.mouth::before, .mouth::after{
+	content: "";
+	border-radius: 50%;
+	background: #AF7F54;
+	width: 20px;
+	height: 20px;
+	box-shadow: 0 3px 0 0 #000;
+	z-index: 1;
+}
+
+.skipMouth::before, .skipMouth::after{
+	background: #C09A79;
+}
+
+.bun{
+	position:relative;
+}
+
+.head{
+	background: #AF7F54;
+	width: 120px;
+	height: 122px;
+	border-radius: 50%/80% 80% 40% 40%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	box-shadow: inset -1px 36px 16px rgba(0, 0, 0, 0.21);
+	z-index: 1;
+}
+
+.skipHead{
+	background: white;
+	box-shadow: none;
+	
+}
+
+.ears{
+	width: 200px;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	z-index: -1;
+	left: 15px;
+}
+
+#right-ear{
+	left: 5px;
+	transform: rotateZ(255deg);
+	z-index:-1;
+}
+
+#left-ear{
+	right: 32px;
+	transform: rotateZ(100deg) rotateY(180deg);
+	z-index: -1;
+}
+
+
+.eyes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: inherit;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	right: 0;
+}
+
+.eyes .eye{
+	background: #000;
+	box-shadow: inset 3px 0px 0 #fff, 3px -4px 16px 9px rgba(0, 0, 0, 0.2), 1px -3px 1px 0 #000;
+	width: 25px;
+	height: 25px;
+	border-radius: 50% 80%;
+	overflow: hidden;
+}
+
+.skipEyes .skipEye{
+	box-shadow: inset 3px 0px 0 #DDC8B6, 3px -4px 16px 9px rgba(0, 0, 0, 0.2), 1px -3px 1px 0 #C09A79;
+
+}
+
+.eyes .eye .right-eye{
+	transform: rotateY(180deg);
+}
+
+.eyes .eye::before{
+	content: "";
+	background: #fff;
+	opacity: 0.85;
+	width: 12.5px;
+	height: 8.3333333px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	left: 10px;
+	top: 1px; 
+}
+
+.nose{
+	position: relative;
+	width: 20px;
+	height: 10px;
+	border-radius: 50%;
+	bottom: -75px;
+	box-shadow: 0px 3px 0 0 pink, 0px -4px 0px -2px #87613f;
+	z-index: 2;
+}
+
+.nose{
+	background: #BA916D;
+	box-shadow: 0px 3px 0 0 pink;
+
+}
+
+.mouth{
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	bottom: 25px;
+}
+
+.bun_body{
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.bun_chest{
+	background: #AF7F54;
+	width: 130px;
+	height: 100px;
+	box-shadow: inset -4px 22px 20px rgba(0, 0, 0, 0.21), inset 0 -19px 3px 8px rgba(0, 0, 0, 0.21);
+	border-radius: 40% 40% 60% 60%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -30px;
+	z-index: 1;
+}
+
+.bun_chest .chest-details{
+	position: relative;
+	width: 45px;
+	height: 45px;
+	background: #B78C65;
+	box-shadow: inset 0 12px 6px -2px rgba(0, 0, 0, 0.15);
+	border-radius: 20% 20% 50% 50%;
+	top: 25px;
+	z-index: 1;
+}
+
+.bun_chest .chest-details::before{
+	content: "";
+	width: 20px;
+	height: 15px;
+	box-shadow: 0 -5px 0 0 #9F724A;
+	transform: rotateZ(200deg);
+	display: table;
+	margin: 0 auto;
+}
+
+.controls{
+	display: flex;
+	flex-direction: row;
+	margin: 50px 0 5px;
+	justify-content: center;
+}
+
+.input{
+	display: flex;
+	flex-direction: column;
+	margin: 0 50px;
+	align-items: center;
+}
+
+.color{
+	min-width: 75px;
+	min-height: 32px; 
+	padding: 0;
+	border: none;
+}
+
+.label{
+	color: #012B04;
+	font: bold 1.25em Helvetica, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+	font-size: 1.75em;
+	padding: 10px;
+}
+
+.mainPageLink{
+	display:block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.mainPageLink:hover{
+	color: white;
+}
+
+.skipLinkContainer{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.skipLink{
+	margin: 0 35px;
+}
+
+.skipLink:hover{
+	color: #AF7F54;
+}
