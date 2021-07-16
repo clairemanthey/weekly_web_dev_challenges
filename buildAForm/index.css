@@ -1,0 +1,138 @@
+/*gradient color #FF53CE #8dF089 
+button colors #a34d8b #793967
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+}
+
+body{
+	background: linear-gradient(to bottom right, #ff53CE, #8dF089);
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: Exo;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.formItem{
+	margin: 15px 0;
+	border-radius: 30px;
+	border:none;
+	text-align: center;
+	height: 50px;
+	width: 175px;
+	font-family: Exo;
+	font-weight: bold;
+	font-size: 1.15em;
+	
+}
+ 
+.formInput{
+
+}
+
+
+.formBtn{
+	display: block;
+	margin: 15px 0;
+	background: #a34d8b;
+	color: white;
+	border-radius: 30px;
+	border:none;
+	text-align: center;
+	font-family: Exo;
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+.formBtn:hover{
+	animation: wiggle .4s infinite;
+	background-color: #793967;
+}
+
+@keyframes wiggle{
+	0%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	25% {
+		transform: rotate(5deg) translate3d(0, 0, 0);
+	}
+	50%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	75%{
+		transform: rotate(-5deg) translate3d(0, 0, 0);
+	}
+	100%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+}
+@-webkit-keyframes wiggle{
+	0%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	25% {
+		transform: rotate(5deg) translate3d(0, 0, 0);
+	}
+	50%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	75%{
+		transform: rotate(-5deg) translate3d(0, 0, 0);
+	}
+	100%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+}
+
+@-moz-keyframes wiggle{
+	0%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	25% {
+		transform: rotate(5deg) translate3d(0, 0, 0);
+	}
+	50%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	75%{
+		transform: rotate(-5deg) translate3d(0, 0, 0);
+	}
+	100%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}	
+}
+
+
+@media only screen and (min-width: 768px) {
+	.form{
+		width: 100%;
+		display:flex;
+		flex-direction: row;
+		justify-content:space-evenly;
+		flex-wrap: nowrap;
+	 }
+	.formItem{
+		margin: 15px 0;
+	    border-radius: 30px;
+	    border:none;
+	    text-align: center;
+	    height: 50px;
+	    width: 200px;
+	    font-family: Exo;
+	    font-weight: bold;
+	    font-size: 1.15em;
+	 
+    }
+
+}
