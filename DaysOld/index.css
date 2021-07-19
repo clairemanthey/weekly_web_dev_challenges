@@ -1,0 +1,98 @@
+  * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 1px;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+	background-image: url(time_image.jpg);
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+	border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 2px auto;
+    align-items: center;
+    text-align: center;
+    background-color: darkred;
+    background-blend-mode: darken;
+    color: white;
+    padding: 10px 5px 0 5px;
+}
+
+#bdayForm{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+    font-family: inherit;
+    letter-spacing: inherit;
+    max-width: 55%;
+    border: none;
+    margin: 0.5em;
+    border-radius: 5px;
+	min-width: 150px;
+	font-weight: bold;
+	color: darkred;
+	text-align: center;
+
+}
+
+.inputLabel{
+	margin: 0.5em 0 0 0;
+}
+button {
+    display: block;
+    background: white;
+    padding: 0.5em 2em;
+}
+
+input{
+	padding: 0.5em 0.5em;
+}
+
+#month{
+	padding: 0.5em 0.5em;
+}
+
+#btn{
+	margin: 0;
+}
+
+#btn:hover{
+	border: 2px solid white;
+	color: white;
+	background: darkred;
+}
+
+#displayResult{
+	margin: 2em 0;
+}
+
+.link{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.link:hover{
+	color: darkred;
+}
