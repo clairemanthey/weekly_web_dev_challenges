@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	height: auto;
+}
+
+.garden {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    background: conic-gradient( #99ffff 0deg 90deg,  #99ff99 90deg 270deg, #99ffff 240deg 0deg);
+}
+
+.fish {
+    position: absolute;
+    fill: darkblue;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.fish:focus, .fish:active{
+	fill: darkred;
+}
+
+.cat {
+    margin: 25% 35%;
+}
+
+.fed {
+    fill: black;
+}
+
+
+
+
+
+
