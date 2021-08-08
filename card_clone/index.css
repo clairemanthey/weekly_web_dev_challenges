@@ -1,0 +1,148 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background: #ebf1ff
+}
+
+
+/* top container background #dae6ff
+ bubbles #cadbfe, #cdddfe
+where bubbles meet #c0d4fd, #c3d6fd
+text color #2b2839
+card height 400px, width 430px
+topContainer height 55%
+*/
+/*Card Styles*/
+.card{
+	width: 40%;
+	height: 80vh;
+	display: block;
+	margin: 2px auto;
+	display: flex;
+	flex-direction: column;
+	font: 1em sans-serif;
+	margin: 10px auto;
+	background: #dae6ff;
+	border-radius: 5px;
+	box-shadow: 0px 5px hsl(220, 23, 92);
+}
+
+.card:hover .bubbleOne{
+	transform: scale(1.7);
+}
+
+.card:hover .bubbleTwo{
+	transform: scale(1.7);
+}
+
+.card:hover .bubbleThree{
+	transform: scale(1.7);
+}
+
+.card:hover .bottomContainer{
+	height: 55%;
+}
+
+/*top conatiner,with blue background*/
+.topContainer{
+	height: 55%;
+	background: #dae6ff;
+	color: #2b2839;
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: right;
+	z-index: 10;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #d5def3;
+	border-left: 1px solid #d5def3;
+	border-right: 1px solid #d5def3;
+	box-sizing: border-box;
+}
+
+.header{
+	padding: 10% 5%;
+	text-shadow: 2px 2px #f1f1f4;
+	position: relative;
+	z-index: 10;
+	font-size: 1.75em;
+}
+
+.bubbleOne{
+	position: relative;
+	width: 120px;
+	height: 80px;
+	background: hsla(220, 96%, 89%, 1);
+	top: -125px;
+	left: 150px;
+	border-radius: 36% 67% 65% 36% / 59% 47% 55% 37% ;
+ 	z-index: -1;
+	opacity: 1;
+	transition: transform 0.3s linear;
+}
+
+.bubbleTwo{
+	position: relative;
+	height: 55px;
+	width: 85px;
+	background: hsla(220, 96%, 89%, 0.7);
+	top: -180px;
+	left: 80px;
+	z-index: -1;
+	opacity: 1;
+	border-radius: 56% 37% 46% 39% / 49% 47% 50% 34%  ;
+	transition: transform 0.3s linear;
+
+}
+
+.bubbleThree{
+	position: relative;
+	height: 85px;
+	width: 100px;
+	background: hsla(220, 96%, 90%, 0.6);
+	top: -210px;
+	left: 90px;
+	z-index: -1;
+	border-radius: 50% 50% 69% 29% / 54% 48% 51% 43% ;
+	transition: transform 0.3s linear;
+	
+}
+
+/*bottom container with white background*/
+.bottomContainer{
+	height: 50%;
+	background: #ffffff;
+	position: relative;
+	border-top-left-radius: 250px 5px;
+	border-top-right-radius: 250px 7px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-bottom: 1px solid #dee4ef;
+	border-left: 1px solid #dee4ef;
+	border-right: 1px solid #dee4ef;
+	transition: transform 0.3s linear;
+}
+
+
+
+.topContent{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#item2{
+	display: inline-block;
+	margin-left: auto;
+}
