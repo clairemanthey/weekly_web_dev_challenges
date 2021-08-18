@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="index.css" />
+	<title>Pricing Component</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>      
+    <h1>Kitty Nibbles</h1>
+    <p class="tagline">Tailored natural food subscription for your feline friend.</p>
+    <div class="monthYearPrices">
+	  <h4 class="item">Monthly</h4>
+	  <label class="switch item">
+	    <input type="checkbox" id="priceChange" onclick="check()" />
+	    <span class="slider round"></span>
+      </label>
+	  <h4 class="item">Yearly</h4>
+    </div>  
+ 
+    <div class="container">
+<!--Cat Package-->	
+      <div class="card card-cat">
+        <h2>Cat Package</h2>
+		<div class="pricingContainer">
+          <p class="price priceOne"><em>£9.99/month</em></p>
+		  <p class="price priceTwo"><em>£119.88/year</em></p>
+        </div>
+		<ul>
+          <li>Food for the month</li>
+          <li>Friday treat</li>
+          <li class="lastLi" >Monthly toy</li>
+        </ul>
+		<button class="btn" id="btncat">Sign up</button>
+<!--Cat Package Modal markup-->
+  	    <div class="cModal" id="catModal">
+		  <div class="catModalContent">
+			<span class="close">&times;</span>
+            <h2>Cat Package</h2>
+  		    <div class="pricingContainerModal">
+     	      <div class="containerItems">
+			    <h4 class="sliderItem">Monthly</h4>
+			    <label class=" switchModal catSwitch sliderItem" id="catSwitch" >
+		         <input type="checkbox" class="catCheckbox" id="catModalPriceChange" onclick="catModalCheck()"/>
+			     <span class="slider round catSlider"></span>
+		        </label>      
+                <h4 class="sliderItem">Yearly</h4>
+			  </div>
+			  <div class="containerItems">
+			    <p class="price modalPrice catModalPriceOne"><em>£9.99/month</em></p>
+                <p class="price modalPrice catModalPriceTwo"><em>£119.88/year</em></p>
+              </div>   
+
+            </div>
+            <ul>
+              <li>Food for the month</li>
+              <li>Friday treat</li>
+              <li class="modalLastLI">&nbsp; Monthly toy</li>
+            </ul>
+		    <button class="modalBtn" id="btncatTwo">Sign up</button>
+		  </div>
+		</div>
+      </div>
+<!--Lion Package -->       
+        <div class="card card-lion">
+        <h2>Lion Package</h2>
+   		<div class="pricingContainer">
+          <p class="price priceOne"><em>£15.99/month</em></p>
+ 		  <p class="price priceTwo"><em>£191.88/year</em></p>
+        </div>
+		<ul>
+          <li>Premium food for the month</li>
+          <li>Friday treat</li>
+          <li class="lastLi">Weekly biodegradable toy</li>
+        </ul>
+		  
+        <button class="btn" id="btnLion">Sign up</button>
+<!--Lion Package Modal-->
+	      <div class="lModal" id="LionModal">
+		    <div class="lionModalContent">
+		      <span class="lionClose">&times;</span>
+			  <h2>Lion Package</h2>
+   		        <div class="pricingContainerModal">
+			      <div class="containerItems">
+			        <h4 class="sliderItem">Monthly</h4>		  
+				    <label class="switch lionSwith sliderItem">
+			          <input type="checkbox" class="tigerCheckbox" id="lionSwitch" onclick="lionModalCheck()"/>
+			          <span class="slider round tigetSlider"></span>
+			        </label>	
+				    <h4 class="sliderItem">Yearly</h4>
+                  </div>
+				  <div class="containerItems">
+				    <p class="price modalPrice lionModalPriceOne"><em>£15.99/month</em></p>
+         	        <p class="price modalPrice lionModalPriceTwo"><em>£191.88/year</em></p>
+                  </div>
+                </div>
+                <ul>
+                  <li>Delux food for the month</li>
+                  <li>Friday treats and games</li>
+                  <li>Weekly biodegradable toy</li>
+                  <li>Pet insurance</li>
+			    </ul>
+              <button class="modalBtn">Sign up</button>
+            </div>
+		  </div>
+	    </div>
+
+<!--Tiger Package-->            
+	    <div class="card card-tiger">
+          <h2>Tiger Package</h2>
+   		  <div class="pricingContainer">
+            <p class="price priceOne"><em>£15.99/month</em></p>
+    	    <p class="price priceTwo"><em>£191.88/year</em></p>
+          </div>
+		  
+          <ul>
+            <li>Delux food for the month</li>
+            <li>Friday treats and games</li>
+            <li>Weekly biodegradable toy</li>
+            <li class="lastLi">Pet insurance</li>
+          </ul>
+          <button class="btn" id="btnTiger">Sign up</button>
+<!--Tiger Package Modal-->
+		  <div class="tModal" id="tigerModal">
+		    <div class="tigerModalContent">
+		      <span class="tigerClose">&times;</span>
+                <h2>Tiger Package</h2>
+   		        <div class="pricingContainerModal">
+			      <div class="containerItems">
+			        <h4 class="sliderItem">Monthly</h4>		  
+   				    <label class="switch tigerSwitch">
+			          <input type="checkbox" class="tigerCheckbox" id="tigerSwitch" onclick="tigerModalCheck()"/>
+			          <span class="slider round tigetSlider"></span>
+			        </label>
+				    <h4 class="sliderItem">Yearly</h4>
+				    </div>
+					<div class="containerItems">
+                      <p class="price modalPrice tigerModalPriceOne"><em>£15.99/month</em></p>
+         	          <p class="price modalPrice tigerModalPriceTwo"><em>£191.88/year</em></p>
+				   </div>
+				   
+                 </div>
+				 <ul>
+                   <li>Delux food for the month</li>
+                   <li>Friday treats and games</li>
+                   <li>Weekly biodegradable toy</li>
+                   <li>Pet insurance</li>
+		  	     </ul>
+                 <button class="modalBtn" id="btnThree">Sign up</button>
+            </div>
+          </div>
+		</div>
+		
+      </div>      
+	 <script src="index.js"></script>
+      
+    </body>
+</html>    

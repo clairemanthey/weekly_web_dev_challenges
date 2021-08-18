@@ -1,0 +1,343 @@
+/* Instructions */
+/* When clicked, the selected card should enlarge (up to you how much) and the price should have a color of #ffd60a*/
+/* The non-selected cards should reduce in opacity */
+/* Stretch goal: add a toggle to display monthly and annual prices */
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Asap', sans-serif;
+}
+
+h1,
+.tagline {
+    text-align: center;   
+}
+
+.tagline {
+    padding-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    background: #001d3d;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.card {
+    cursor: pointer;
+    color: white;
+    background-color: #003566;
+    width: 300px;
+    text-align: center;
+    margin: 1em;
+    padding: 1em 0.25em;
+    position: relative;
+}
+
+
+.card h2 {
+    margin: 0;
+}
+
+li {
+    text-align: left;
+    padding: 0 0 1em 0.5em;
+}
+
+.lastLi {
+    padding-bottom: 5em;
+}
+
+.card-cat ul li::marker {
+    content: '🐱'
+}
+
+.card-lion ul li::marker {
+    content: '🦁'
+}
+
+.card-tiger ul li::marker {
+    content: '🐯'
+}
+
+.btn {
+    font-family: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    padding: 1em 2em;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    background-color: #ffd60a;
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+    background-color: white;
+}
+
+/*cat modal*/
+
+.cModal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.catModalContent{
+    cursor: pointer;
+    color: white;
+    background-color: #003566;
+    width: 35%;
+	min-height: 75%;
+	border: 15px solid #001d3d;
+    text-align: center;
+	margin: 20px auto 0;
+    padding: 20px;
+	font-size: 1.25em;
+}
+/*end cat modal styles*/
+
+/*Lion modal styles*/
+
+.lModal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close{
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus{
+	color: black; 
+	text-decoration: none;
+}
+
+.lionModalContent{
+    cursor: pointer;
+    color: white;
+    background-color: #003566;
+    width: 35%;
+	min-height: 70%;
+	border: 15px solid #001d3d;
+    text-align: center;
+	margin: 20px auto 0;
+    padding: 20px;
+	font-size: 1.25em;
+}
+
+.lionClose{
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.lionClose:hover, .lionClose:focus{
+	color: black; 
+	text-decoration: none;
+}
+/*end lion modal styles*/
+
+/*tiger modal styles*/
+.tModal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.tigerModalContent{
+    cursor: pointer;
+    color: white;
+    background-color: #003566;
+    width: 35%;
+	min-height: 70%;
+	border: 15px solid #001d3d;
+    text-align: center;
+	margin: 20px auto 0;
+    padding: 20px;
+	font-size: 1.25em;
+}
+
+.tigerClose{
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.tigerClose:hover, .tigerClose:focus{
+	color: black; 
+	text-decoration: none;
+}
+
+/*all modals*/
+.modalBtn{
+    font-family: inherit;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #ffd60a;
+    padding: 1em 2em;
+}
+
+.modalLastLI{
+	padding: 0 0 .75em 0;
+}
+
+.modalPrice{
+	color: #ffd60a;
+}
+
+/*pricing container styles*/
+
+.pricingContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;	
+	align-items: center;
+}
+
+.switch{
+	position: relative;
+	display: inline-block;
+	width: 38px;
+	height: 20px;
+}
+
+.switch input{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+input:checked + .slider{
+	background-color: #2196F3;
+}
+
+input:focus + .slider{
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before{
+	transform: translateX(16px);
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(1px);
+	-moz-transform: translateX(16px);
+}
+
+.slider.round{
+	border-radius: 17px;
+} 
+
+.slider.round:before{
+	border-radius: 50%;
+}
+
+.slider{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before{
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 3px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+/*Price toggle*/
+.monthYearPrices{
+	display: flex;
+	flex-direction: row;
+	margin: 5px auto;
+	justify-content: center;
+}
+
+.item{
+	margin: 0 5px;
+}
+
+/*price toggle modals styles*/
+
+.pricingContainerModal{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.containerItems{
+	display: flex;
+	flex-direction: row;
+	margin: 5px auto;
+	align-items: baseline;
+}	
+
+#catSwitch{
+	top: 6px;
+}
+
+.sliderItem{
+	margin: 0 5px;
+}
+
+.switchModal{
+	position: relative;
+	display: inline-block;
+	width: 38px;
+	height: 20px;
+}
+
+.switchModal input{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
