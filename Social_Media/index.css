@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5B18E;   
+    font-family: Helvetica;    
+}
+
+.container {
+    text-align: left;
+    padding: 2em;   
+    height: 100%
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+h1 > span {
+    color: #361400;
+}
+
+.subtitle {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.cat-basket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    text-align:  center;
+}
+
+.catProfile{
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding:  15px;
+    width: 18rem;
+    border-radius: 5px;
+    margin: 15px 0;
+    background-color: #361400;
+    color:  #F1D7C5;
+    margin:  0 0 5rem 0;
+}
+
+.profilePic{
+    width: 100%;
+    height:  auto;
+    max-height: 200px;
+    margin: 0;
+    border-radius: 5px;
+
+}
+
+.connect{
+    text-decoration: none;
+    color:  #E5B18E;
+    border: 2px solid #E5B18E;
+    margin:  0 auto;
+    padding:  0.5rem 1rem;
+    font-weight: bold;
+}
+
+.connect:hover{
+    color: #361400;
+    background-color: #E5B18E;
+    border:  2px solid #361400;
+}
+
+.footer{
+    justify-self: left;
+}
+.photoCredit{
+    margin:  2rem 0 0 2rem ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*<i class="fas fa-paw"></i>*/
+
+@media only screen and (max-width: 768px){
+    .cat-basket{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1, .subtitle {
+        text-align: center;
+    }
+}
