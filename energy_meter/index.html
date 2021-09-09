@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html lang="en">
+    
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="index.css">
+      <title>Energy Meter</title>
+    </head>
+    
+    <body>
+      <div class="container">
+        <label for="energyInput">How's your energy today?</label>
+        <input id="energyInput" class="input" type="number" min="1" max="10" value="5">
+        <meter id="energy" min="0" max="10" low="3" high="7" optimum="10" value="5"></meter>
+      
+        <label for="exercise">How many minutes did you exercise today?</label>
+        <input id="exercise" type="number" class="input" min="1" max="60" value="5">
+        <meter id="exerciseTime" min="0" max="60" low="7" high="45" optimum="60" value="5"></meter>
+
+         <label for="sleep">How many hours did you sleep</label>
+         <input id="sleep" type="number" class="input sleepInput" min="0.5" max="15" value="0">
+         <meter id="sleepTime" min="0" max="15" low="4" high="10" optimum="8" value="0"></meter>
+
+
+      </div>
+       
+      <script src="index.js"></script>
+    </body>
+</html>
