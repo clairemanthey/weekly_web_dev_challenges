@@ -1,0 +1,74 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    background: #FFEAF4;
+    overflow: hidden
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+    margin: 1rem 0 0 0;
+}
+
+.adviceEye {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: black;
+    text-align: center;
+    padding: 0.5em;
+    position: relative;
+    border: 5px solid black;
+}
+
+.display{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background: white;
+}
+
+p{
+    background: #fff;
+}
+
+.display, p{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-weight: 700;
+   transform: translate(-50%, -50%);
+   padding: 0.5em;
+}
+
+.label{
+   color: #9B004E;
+   font-size: 1.75rem;
+   font-weight: bold;
+   margin: 0 0 2px 0;
+}
+
+#question{
+    font-size: 1.25rem;
+    background: #fff;
+    border:  1.5px solid #9b004e;
+    width: 33%;
+}
+
+button {
+    border: none;
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 5px;
+    background: #9B004E;
+    color: #FFEAF4;
+    font-size: 1.20rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
