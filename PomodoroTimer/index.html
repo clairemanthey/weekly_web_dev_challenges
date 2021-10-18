@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+    
+    <head>
+      <link rel="stylesheet" href="index.css">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://kit.fontawesome.com/13e90f422c.js" crossorigin="anonymous"></script>    
+      <title>Pomodoro Timer</title> 
+    </head>
+    
+    <body>
+    <h1>Pomodoro Timer</h1>
+      <div class="container">
+
+        <div class="timeContainer item">
+          <div class="label timerItem" id="status"></div>
+          <div class="labelTimer timerItem time" id="timerDisplay"></div>
+        </div>
+      </div>
+      
+      <div class="controlsContainer">  
+        <div class="containterItem item">
+          <div class="label">Work<br>Time</div>
+          <div class="changeTime">
+            <i class="fas fa-plus itemTime itemAddSub" id="addTime"></i>
+            <div class="workLength itemTime time" id="workTimeLength">25</div>
+            <i class="fas fa-minus itemTime itemAddSub" id="subtractTime"></i>
+          </div>
+        </div>
+
+        <div class="containterItem item">
+          <button class='button timerItem' id='start'>start</button>
+        </div>        
+        <div class="containterItem item">
+          <div class="label">Break<br>Time</div> 
+          <div class="changeTime">
+            <i class="fas fa-plus itemTime itemAddSub" id="addBreakTime"></i>
+            <div class="breakLength itemTime time" id="breakTimeLength">5</div>
+            <i class="fas fa-minus itemTime itemAddSub" id="subtractBreakTime"></i>
+          </div>
+        </div>
+      </div>
+
+        <div class="containterItem">
+          <button class='button right' id='reset'>Reset</button>
+        </div>
+      <script src="index.js"></script>
+    </body>
+  </html>

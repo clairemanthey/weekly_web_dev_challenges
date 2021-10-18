@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #EADAD7;
+    font-family: helvetica;
+}
+
+h1{
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.container,
+.button-container,
+.timer {
+    display: flex;
+    justify-content: center;
+}
+
+/*main container*/
+.container {
+    flex-direction: column;
+    color: #5D2E46;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-around;
+    border-radius: 50%;
+    flex-wrap: nowrap;
+}
+
+.item{
+    flex: 1 1 0px;
+    margin: 15px 0 0 0;
+}
+
+.timeContainer{
+    display: flex;
+    flex-direction: column;
+}
+.containterItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.changeTime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*flex containers*/
+
+.timeContainer{
+  justify-content: center;
+  align-self:stretch;
+  display:flex;
+  align-items:center;
+}
+
+.changeTime{
+    background-color: transparent;
+    border: none;
+    width: 1.25em;
+    padding:  0;
+}
+
+.label {
+    font-size: 1.5rem;
+    color: #573857;
+}
+
+.workLength, .breakLength, .labelTimer{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.itemTime{
+    margin: 5px 0;
+}
+
+.labelTimer{
+    font-size: 1.5rem;
+}
+
+.itemAddSub{
+    color: #402630;
+    border: 2px solid #EADAD7;
+    padding:  2px;
+}
+
+.itemAddSub:hover{
+    border: 2px solid #402630;
+}
+
+.itemAddSub:active{
+    color: #EADAD7;
+    background-color: #402630;
+
+}
+
+.timerItem{
+    margin: 0;
+}
+
+.controlsContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 250px 15px;
+}
+
+.time{
+    color: #2D003D;
+}
+
+/*Start and Reset Button*/
+.button{
+    color: #2D003D;
+    background-color: #C7A8C7;
+    border: 2px solid #EADAD7 ;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+#start{
+    height: 100px;
+    width: 100px;
+}
+
+#reset{
+    height: 70px;
+    width: 70px;
+}
+
+.button:hover{
+    border: 2px solid #2D003D;
+}
+
+.button:active{
+    background-color: #2D003D;
+    color: #C7A8C7;
+}
+
+#timerDisplay{
+    margin: 15px 0;
+}
