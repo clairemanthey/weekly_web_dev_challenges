@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin: 15px auto;
+
+}
+
+.gradient {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    background-color: #b5caf9;
+    padding: .5em;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type=color] {
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;    
+    height: 30px;
+    width: 75px;
+}
+
+.btn{
+    margin: 0 3.5rem;
+}
+
+.gradientContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorInputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.radioBtns{
+    display: flex;
+    flex-direction: column;
+}
+
+.radioBtnLabel{
+    font-size: 1rem;
+}
+
+.radioContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentColors{
+    color: transparent;
+    font-size:  1.75rem;
+    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    margin:  150px 0 0 0;
+}
+
+
+.angleInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
