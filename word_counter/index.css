@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+    background-color: #FFDDD2;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    background-color: #FFDDD2;
+    color:  #00383D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+textarea {
+    height: 60%;
+    width: 80%;
+}
+
+.counterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cContainerOne{
+    display: flex;
+    flex-direction: row;
+}
+
+.cContainerTwo{
+    display: flex;
+    flex-direction: row;
+}
+
+.counterItem{
+    width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .counterContainer{
+    }
+
+    .cContainerOne, .cContainerTwo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea{
+        width:  50%;
+        height: 95vh;
+        padding:  0 50px 0 0;
+        margin:  0 10px 0 0;
+    }
+
+
+}

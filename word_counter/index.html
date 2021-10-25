@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="index.css">
+      <meta charset="UTF-8" /> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Word Counter</title>
+    </head>
+    <body>
+        <h1>Word Count</h1>
+
+      <div class="container">
+        <textarea id="txtid" name="txtname" rows="4" cols="50" maxlength="20000"></textarea>
+        <div class="counterContainer">
+
+          <div class="cContainerOne">   
+            <p class="counterItem">Characters: <span id="charCount"></span></p>
+            <p class="counterItem">Words: <span id="count"></span></p>
+            <p class="counterItem">Sentences: <span id="sentences"></span></p>
+          </div>
+
+          <div class="cContainerTwo">
+            <p class="counterItem">Longest word: <span id="longestWord"></span></p>
+            <p class="counterItem">Longest count: <span id="shortestWord"></span></p>
+          </div>
+        </div>
+      </div>
+    <script src="index.js"></script>
+    </body>
+</html>
