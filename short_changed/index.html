@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="index.css" />
+		<title>Change Calculator</title>
+    </head>
+
+    <body>
+        
+        <div id="coins">
+        
+  		  <div class="coin quarter">
+		    <img src="images/quarter_rs.png" alt="quarter" class="quarter"/>
+		    <p class="amount">.25</p>
+		  </div>
+            
+		  <div class="coin dime">
+		    <img src="images/dime_rs.png" alt="dime" class="dime">
+			<p class="amount">.10</p>
+		  </div>
+            
+		  <div class="coin nickel">
+			<img src="images/nickel_rs.png" alt="nickel" class="nickel"> 
+			<p class="amount">.05</p>
+		  </div>
+            
+		  <div class="coin penny">
+			<img src="images/penny_rs.png" alt="penny" class="penny">
+			<p class="amount">.01</p>
+		  </div>
+        
+		</div>
+        
+        <div id="coin-counts">
+            <div id="quarter-count" class="coin"></div>
+            <div id="dime-count" class="coin"></div>
+            <div id="nickel-count" class="coin"></div>
+            <div id="penny-count" class="coin"></div>
+        </div>
+        
+        <div id="purchase-confirmation"></div>
+        
+        
+        <div id="case-switcher">
+            <button id="previous-case" class="button">Previous Case</button>
+            <button id="next-case" class="button">Next Case</button>
+        </div>
+                
+        <script src="index.js" ></script>
+    </body>
+</html> 
