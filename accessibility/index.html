@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+    <title>Accessibility</title>
+  </head>
+
+  <body>
+  <input type="checkbox" id="switch">
+  <div class="app">
+    <div class="body">
+
+    <!-- Middle -->
+    <div class="content">
+      <img src="accessibilityImg.jpg" alt="compass"/>
+
+        <label for="switch" class="switch">
+          <span class="toggle"></span>
+          <span class="names">
+            <span class="color">Light</span>
+            <span class="color" id="dark">Dark</span>
+          </span>
+        </label>
+        <div class="inputItem">
+          <label for="name" class="label">Name:</label>
+          <br>
+          <input class="input" id="name" type="text" placeholder="Enter Name">
+        </div>
+        
+        <div class="inputItem">
+          <label for="location" class="label">City:</label>
+          <br>
+          <input class="input" id="location" type="text" placeholder="Enter City">
+        </div>
+    
+        <div class="inputItem">
+          <label for="email" class="label">Email:</label>
+          <br>
+          <input class="input" id="email" type="email" placeholder="Enter Email">
+        </div>      
+    
+        <div class="inputItem">
+          <button type="submit" class="submitBtn inputItem" id="submitBtn">Submit</button>
+        </div>
+        <div id="submitModal" class="modal">
+          <div class="modalContent">
+            <span class="close"> &times;</span>
+            <h2>Thank you submitting your info</h2>
+            <p>Click the X or press escape to close</p>
+          </div>
+        </div>
+ 
+      </div>
+
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
