@@ -1,0 +1,137 @@
+/* GENERAL 
+*/
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  place-content: center;
+  background-color: hsl(230 35% 7%);
+  font: 1rem bold Tahoma, sans-serif;
+}
+
+.app{
+  height: 100vh;
+}
+
+/*button styles*/
+.btnText{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  all 1s ease-in-out;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.btnText:hover{
+    width: 300px;
+    height: 300px;
+    font-size: 2.75rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: hsl(230, 2%, 24%)
+
+}
+
+/*toggle styles*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16%;
+}
+
+.color{
+  line-height: 42px;
+}
+
+.switch, .toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+}
+
+.switch {
+  width:70%;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 100px;
+  position: relative;
+  margin: 0.5rem auto 0.5rem auto; 
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.names {
+  font-size: 90%;
+  font-weight: bolder;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: .5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+#dark {
+  opacity: .9;
+  color: white;
+}
+
+/*light/dark styles*/
+[type="checkbox"] {
+    display: none;
+}
+/* Toggle */
+[type="checkbox"]:checked + .app .toggle{
+    transform: translateX(100%);
+    background-color: #34323D;
+}
+[type="checkbox"]:checked + .app .dark{
+    opacity: 1;
+}
+[type="checkbox"]:checked + .app .light{
+    opacity: .5;
+}
+/* color changes*/
+
+[type="checkbox"]:checked + .app .btnText{
+  color: white;
+  background-color: black;
+  font-size: 2rem;
+}
+
+[type="checkbox"]:checked + .app .btnText:hover{
+    font-size: 2.75rem;
+}
+
+
+[type="checkbox"]:checked + .app .btn{
+  color: black;
+  background-color: #DCDCDC;
+}
+
+[type="checkbox"]:checked + .app{
+  background-color: white;
+
+}
