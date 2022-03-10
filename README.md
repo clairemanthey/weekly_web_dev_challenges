@@ -1,3 +1,5 @@
 # Scrimba-Weekly-WebDev-Challenges
 
-image files not uploaded for short changed
+Weekly webdev challenges from 2020-2021
+
+Weekly challenges from scrimba to practice html, css, and javascript skills as well and UI and responsive design
