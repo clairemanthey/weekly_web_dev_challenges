@@ -1,6 +1,8 @@
 #  Scrimba Weekly Web Dev Challenges
 [Weekly challenges from Scrimba](https://scrimba.com/)
 
+![My Image](image.png)
+
 # Live Site
 [Weekly Web Dev Challenges](https://scrimba.com/scrim/ck6pEwtM)
 
